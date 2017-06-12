@@ -176,18 +176,18 @@ console.log(dumpsterMeal);
  * Console.log your result.  
 */
 
-function checkProduct(x){
+function checkProduct(){
   return sum * product;
 }
-var noNumber = checkProduct(sum, product);
-console.log(noNumber);
+var noNumber = checkProduct();
+console.log("noNumber:", noNumber);
 
 function checksProduct(){
 
   return sum * product;
 }
-
-console.log();
+var whatNumber = checksProduct();
+console.log("whatNumber:", whatNumber);
 
 /*
  * #9
@@ -200,12 +200,19 @@ console.log();
  * Console.log your result.  
 */
 
-function checkQuotient(x){
+function checkQuotient(){
 
   return product * quotient;
 }
-var zeroNumber = checkQuotient(product, quotient);
-console.log(zeroNumber);
+var zeroNumber = checkQuotient();
+console.log("zeroNumber:", zeroNumber);
+
+function checksQuotient(){
+
+  return product * quotient;
+}
+var noneNumber = checkQuotient();
+console.log("noneNumber:", noneNumber);
 
 /*
  * #10
@@ -241,7 +248,7 @@ function addThenSubtract(num1, num2, num3){
   return (num1 + num2) - num3;
 }
 var stopMaths = addThenSubtract(bango3, bango4, bango5);
-console.log(stopMaths);
+console.log("stopMaths:", stopMaths);
 
 function addDenSubtract(num4, num5, num6){
 
@@ -271,6 +278,12 @@ function multiplyThenDivide(num1, num2, num3){
 var killMaths = multiplyThenDivide(sum, sum, product);
 console.log("killMaths:", killMaths);
 
+function timesThenDivide(num1, num2, num3){
+
+  return ((num1 * num2) / num3);
+}
+var deadMaths = timesThenDivide(sum, sum, product);
+console.log("deadMaths:", deadMaths);
 /*
  * #12
  * Function - createFullName
@@ -289,6 +302,13 @@ function createFullName(firstName, lastName){
 }
 var newName = createFullName("Laura Mary", " Carter");
 console.log(newName);
+
+function newFullName (firstName, lastName){
+
+  return firstName + lastName;
+}
+var newerName = newFullName("Erin", " Heatherton");
+console.log(newerName);
 
 /*
  * #13 
@@ -360,10 +380,10 @@ console.log(goodFood);
 
 function verifyDrinkingAge (age){
 
-  if (verifyDrinkingAge (age >= 21)) {return true} else {return false};
+  if (age >= 21) {return true} else {return false};
 }
-var canDrink = verifyDrinkingAge (23);
-console.log(canDrink);
+var canDrink = verifyDrinkingAge (20);
+console.log("canDrink:", canDrink);
 
 /**
  * #18
@@ -371,8 +391,9 @@ console.log(canDrink);
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
-function throwParty(canDrink = true || false){
-  if (canDrink = true){return "Cheee Hoo! We going to da party!"} if (canDrink = false){return "Meh, see you at Starbucks."};
+function throwParty(yourAge){
+
+  if (yourAge = true) {return "Cheee Hoo! We going to da party!"} else {return "Meh, see you at Starbucks."};
 }
-var canParty = throwParty(canDrink = true);
-console.log(canParty);
+var canParty = throwParty(canDrink);
+console.log("canParty:", canParty);
