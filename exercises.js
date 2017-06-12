@@ -344,7 +344,20 @@ console.log(goodFood);
  * Console.log your result. 
 */
 
+function shoeSize (inches){
 
+  return "Your shoe size is " + (inches) * 2.54 + "cm.";
+}
+var newShoe = shoeSize (9.5);
+console.log("newShoe:", newShoe);
+
+
+function otherSize (inches){
+
+  return "Your new shoe size is " + (inches) * 0.0254 + " meters.";
+}
+var otherShoe = otherSize (9.5);
+console.log("otherShoe:", otherShoe);
 /*
  * #15
  * Function allCaps
@@ -355,7 +368,19 @@ console.log(goodFood);
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+function allCaps(str){
 
+  return str.toUpperCase();
+}
+var upLetters = allCaps("believe you can and you're halfway there.");
+console.log("upLetters:", upLetters);
+
+function tallCaps(xyz){
+
+  return xyz.toUpperCase();
+}
+var bigLetters = tallCaps("enjoy your vacation in singapore and thailand because you'll need it for August!");
+console.log("bigLetters:", bigLetters);
 
 /*
  * #16
@@ -365,7 +390,19 @@ console.log(goodFood);
  * Console.log your result.
 */
 
+function oneCap(abc){
 
+  return abc.charAt(0).toUpperCase() + abc.slice(1);
+}
+var oneLetter = oneCap("believe you can and you're halfway there.");
+console.log("oneLetter:", oneLetter);
+
+function soloCap(zyx){
+
+  return zyx.charAt(0, 23, 37).toUpperCase() + zyx.slice(1);
+}
+var soloLetter = soloCap("enjoy your vacation because you'll need it!");
+console.log("soloLetter:", soloLetter);
 
 /*
  * #17
@@ -385,6 +422,13 @@ function verifyDrinkingAge (age){
 var canDrink = verifyDrinkingAge (20);
 console.log("canDrink:", canDrink);
 
+function verifySpeed (speed){
+
+  if (speed >= 55) {return true} else {return false};
+}
+var freewaySpeed = verifySpeed (71);
+console.log("freewaySpeed:", freewaySpeed);
+
 /**
  * #18
  * Function - throwParty
@@ -393,7 +437,14 @@ console.log("canDrink:", canDrink);
 
 function throwParty(yourAge){
 
-  if (yourAge = true) {return "Cheee Hoo! We going to da party!"} else {return "Meh, see you at Starbucks."};
+  if (yourAge == true) {return "Cheee Hoo! We going to da party!"} else {return "Meh, see you at Starbucks."};
 }
 var canParty = throwParty(canDrink);
 console.log("canParty:", canParty);
+
+function speedingTicket(yourSpeed){
+
+  if (yourSpeed == true) {return "Thank you for your generous quick donation to the State of Hawaii!"} else {return "Thank you for obeying the freeway speed limit."}
+}
+var canFly = speedingTicket(freewaySpeed);
+console.log("canFly:", canFly);
