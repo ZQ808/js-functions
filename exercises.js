@@ -182,6 +182,7 @@ function checkProduct(){
 var noNumber = checkProduct();
 console.log("noNumber:", noNumber);
 
+
 function checksProduct(){
 
   return sum * product;
@@ -206,6 +207,7 @@ function checkQuotient(){
 }
 var zeroNumber = checkQuotient();
 console.log("zeroNumber:", zeroNumber);
+
 
 function checksQuotient(){
 
@@ -250,6 +252,7 @@ function addThenSubtract(num1, num2, num3){
 var stopMaths = addThenSubtract(bango3, bango4, bango5);
 console.log("stopMaths:", stopMaths);
 
+
 function addDenSubtract(num4, num5, num6){
 
   return (num4 + num5) - num6;
@@ -278,12 +281,14 @@ function multiplyThenDivide(num1, num2, num3){
 var killMaths = multiplyThenDivide(sum, sum, product);
 console.log("killMaths:", killMaths);
 
+
 function timesThenDivide(num1, num2, num3){
 
   return ((num1 * num2) / num3);
 }
 var deadMaths = timesThenDivide(sum, sum, product);
 console.log("deadMaths:", deadMaths);
+
 /*
  * #12
  * Function - createFullName
@@ -302,6 +307,7 @@ function createFullName(firstName, lastName){
 }
 var newName = createFullName("Laura Mary", " Carter");
 console.log(newName);
+
 
 function newFullName (firstName, lastName){
 
@@ -358,6 +364,7 @@ function otherSize (inches){
 }
 var otherShoe = otherSize (9.5);
 console.log("otherShoe:", otherShoe);
+
 /*
  * #15
  * Function allCaps
@@ -375,11 +382,12 @@ function allCaps(str){
 var upLetters = allCaps("believe you can and you're halfway there.");
 console.log("upLetters:", upLetters);
 
+
 function tallCaps(xyz){
 
   return xyz.toUpperCase();
 }
-var bigLetters = tallCaps("enjoy your vacation in singapore and thailand because you'll need it for August!");
+var bigLetters = tallCaps("enjoy your vacation in singapore and thailand because you'll need it for august!");
 console.log("bigLetters:", bigLetters);
 
 /*
@@ -396,6 +404,7 @@ function oneCap(abc){
 }
 var oneLetter = oneCap("believe you can and you're halfway there.");
 console.log("oneLetter:", oneLetter);
+
 
 function soloCap(zyx){
 
@@ -422,6 +431,7 @@ function verifyDrinkingAge (age){
 var canDrink = verifyDrinkingAge (20);
 console.log("canDrink:", canDrink);
 
+
 function verifySpeed (speed){
 
   if (speed >= 55) {return true} else {return false};
@@ -441,6 +451,7 @@ function throwParty(yourAge){
 }
 var canParty = throwParty(canDrink);
 console.log("canParty:", canParty);
+
 
 function speedingTicket(yourSpeed){
 
