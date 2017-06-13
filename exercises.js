@@ -426,17 +426,21 @@ console.log("soloLetter:", soloLetter);
 
 function verifyDrinkingAge (age){
 
-  if (age >= 21) {return true} else {return false};
+  if (age >= 21) {return true;
+  } else {
+    return false;}
 }
-var canDrink = verifyDrinkingAge (20);
+var canDrink = verifyDrinkingAge (23);
 console.log("canDrink:", canDrink);
 
 
 function verifySpeed (speed){
 
-  if (speed >= 55) {return true} else {return false};
+  if (speed >= 55) {return true;
+  } else {
+    return false;}
 }
-var freewaySpeed = verifySpeed (71);
+var freewaySpeed = verifySpeed (65);
 console.log("freewaySpeed:", freewaySpeed);
 
 /**
@@ -447,7 +451,9 @@ console.log("freewaySpeed:", freewaySpeed);
 
 function throwParty(yourAge){
 
-  if (yourAge == true) {return "Cheee Hoo! We going to da party!"} else {return "Meh, see you at Starbucks."};
+  if (yourAge === true) {return "Cheee Hoo! We going to da party!";
+} else {
+  return "Meh, see you at Starbucks.";}
 }
 var canParty = throwParty(canDrink);
 console.log("canParty:", canParty);
@@ -455,7 +461,9 @@ console.log("canParty:", canParty);
 
 function speedingTicket(yourSpeed){
 
-  if (yourSpeed == true) {return "Thank you for your generous quick donation to the State of Hawaii!"} else {return "Thank you for obeying the freeway speed limit."}
+  if (yourSpeed === true) {return "Thank you for your generous speedy State of Hawaii donation!";
+} else {
+  return "Thank you for obeying the freeway speed limit.";}
 }
 var canFly = speedingTicket(freewaySpeed);
 console.log("canFly:", canFly);
