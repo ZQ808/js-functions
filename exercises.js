@@ -58,11 +58,18 @@ console.log(bango2);
 
 function add(num1, num2){
 
+return (num1 + num2);
+}
+var sum = add(bango1, bango2);
+console.log("sum:", sum);
+
+/*function add(num1, num2){
+
  return num1 + num2;
 }
 
 var sum = add(bango1, bango2);
-console.log("sum:", sum);
+console.log("sum:", sum);*/
 
 /*
  * #3
@@ -82,8 +89,15 @@ function subtract(num1, num2){
 
   return num1 - num2;
 }
-var difference = subtract(bango1, bango2);
+var difference = subtract(bango2, bango1);
 console.log("difference:", difference);
+
+/*function subtract(num1, num2){
+
+  return num1 - num2;
+}
+var difference = subtract(bango1, bango2);
+console.log("difference:", difference);*/
 
 /*
  * #4
@@ -106,6 +120,13 @@ function multiply(num1, num2){
 var product = multiply(bango1, bango2);
 console.log("product:", product);
 
+/*function multiply(num1, num2){
+
+  return num1 * num2;
+}
+var product = multiply(bango1, bango2);
+console.log("product:", product);*/
+
 /*
  * #5
  * Function - divide
@@ -122,10 +143,17 @@ console.log("product:", product);
 
 function divide(num1, num2){
 
+  return num2 / num1;
+}
+var quotient = divide(bango2, bango1);
+console.log("quotient:", quotient);
+
+/*function divide(num1, num2){
+
   return num1 / num2;
 }
 var quotient = divide(bango1, bango2);
-console.log("quotient:", quotient);
+console.log("quotient:", quotient);*/
 
 /*
  * #6
@@ -144,7 +172,14 @@ function checkSum(x){
   return "Mariah Carey has been married " + x + " times.";
 }
 var numRings = checkSum(sum);
-console.log(numRings);
+console.log("numRings:", numRings);
+
+/*function checkSum(x){
+
+  return "Mariah Carey has been married " + x + " times.";
+}
+var numRings = checkSum(sum);
+console.log(numRings);*/
 
 /*
  * #7
@@ -160,10 +195,18 @@ console.log(numRings);
 
 function checkDifference(x){
 
+return "Last night I dreamt that I ate " + x + " Taco Bell soft taco.";
+}
+
+var tacoDream = checkDifference(difference);
+console.log("tacoDream:", tacoDream);
+
+/*function checkDifference(x){
+
   return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
 }
 var dumpsterMeal = checkDifference(difference);
-console.log(dumpsterMeal);
+console.log(dumpsterMeal);*/
 
 /*
  * #8
@@ -177,6 +220,13 @@ console.log(dumpsterMeal);
 */
 
 function checkProduct(){
+
+  return sum * product;
+}
+var noParameter = checkProduct();
+console.log("noParameter:", noParameter);
+ 
+/*function checkProduct(){
   return sum * product;
 }
 var noNumber = checkProduct();
@@ -188,7 +238,7 @@ function checksProduct(){
   return sum * product;
 }
 var whatNumber = checksProduct();
-console.log("whatNumber:", whatNumber);
+console.log("whatNumber:", whatNumber);*/
 
 /*
  * #9
@@ -203,6 +253,13 @@ console.log("whatNumber:", whatNumber);
 
 function checkQuotient(){
 
+return product * quotient;
+}
+var zeroNumber = checkQuotient();
+console.log("zeroNumber:", zeroNumber);
+
+/*function checkQuotient(){
+
   return product * quotient;
 }
 var zeroNumber = checkQuotient();
@@ -214,7 +271,7 @@ function checksQuotient(){
   return product * quotient;
 }
 var noneNumber = checkQuotient();
-console.log("noneNumber:", noneNumber);
+console.log("noneNumber:", noneNumber);*/
 
 /*
  * #10
@@ -235,6 +292,29 @@ console.log("noneNumber:", noneNumber);
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
+
+var bango3 = noParameter;
+var bango4 = sum;
+var bango5 = difference;
+
+function addThenSubtract(num1, num2, num3){
+
+return (num1 + num2)-num3;
+}
+var numNumbers = addThenSubtract(noParameter, sum, difference);
+console.log("numNumbers:", numNumbers);
+
+
+/*var bango3 = noParameter;
+var bango4 = product;
+var bango5 = difference;
+
+function addThenSubtract(num1, num2, num3){
+
+return (num1 + num2) - num3;
+}
+var threePlay = addThenSubtract(bango3, bango4, bango5);
+console.log("threePlay:", threePlay);
 
 var bango3 = 1;
 console.log(bango3);
@@ -258,7 +338,18 @@ function addDenSubtract(num4, num5, num6){
   return (num4 + num5) - num6;
 }
 var endMath = addDenSubtract(difference, product, sum);
-console.log("endMath:", endMath);
+console.log("endMath:", endMath);*/
+
+var bango3 = 4;
+var bango4 = 5;
+var bango5 = 8;
+
+function addThenSubtract(num1, num2, num3){
+
+return (num1 + num2) - num3;
+}
+var moreMath = addThenSubtract(bango3, bango4, bango5);
+console.log("moreMath:", moreMath);
 
 /*
  * #11
@@ -276,6 +367,14 @@ console.log("endMath:", endMath);
 
 function multiplyThenDivide(num1, num2, num3){
 
+  return (num1 * num2)/ num3;
+}
+
+var weDivided = multiplyThenDivide (numNumbers, noParameter, product);
+console.log("weDivided:", weDivided);
+
+/*function multiplyThenDivide(num1, num2, num3){
+
   return ((num1 * num2) / num3);
 }
 var killMaths = multiplyThenDivide(sum, sum, product);
@@ -287,7 +386,7 @@ function timesThenDivide(num1, num2, num3){
   return ((num1 * num2) / num3);
 }
 var deadMaths = timesThenDivide(sum, sum, product);
-console.log("deadMaths:", deadMaths);
+console.log("deadMaths:", deadMaths);*/
 
 /*
  * #12
@@ -303,6 +402,14 @@ console.log("deadMaths:", deadMaths);
 
 function createFullName(firstName, lastName){
 
+  return firstName + " " + lastName;
+}
+
+var myFullName = createFullName("Hannah", "Ferguson");
+console.log("myFullName:", myFullName);
+
+/*function createFullName(firstName, lastName){
+
   return firstName + lastName;
 }
 var newName = createFullName("Laura Mary", " Carter");
@@ -314,7 +421,7 @@ function newFullName (firstName, lastName){
   return firstName + lastName;
 }
 var newerName = newFullName("Erin", " Heatherton");
-console.log(newerName);
+console.log(newerName);*/
 
 /*
  * #13 
@@ -331,11 +438,19 @@ console.log(newerName);
  */
 
 function eatFood(firstName, lastName, food){
+/*console.log(createFullName(firstName, lastName));*/
+  return firstName + lastName + " eats " + food + " everyday for breakfast.";
+}
+
+var eatBreakfast = eatFood("Hannah", " Ferguson", "Scrambled Eggs");
+console.log("eatBreakfast:", eatBreakfast);
+
+/*function eatFood(firstName, lastName, food){
 
   return newName + " eats " + food + " everyday for breakfast";
 }
 var goodFood = eatFood("Laura Mary", " Carter", "chicken");
-console.log(goodFood);
+console.log(goodFood);*/
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -350,7 +465,15 @@ console.log(goodFood);
  * Console.log your result. 
 */
 
-function shoeSize (inches){
+function shoeSize(inches){
+
+  return inches * 2.54;
+}
+
+var newSize = shoeSize(9.5);
+console.log("newSize:", newSize);
+
+/*function shoeSize (inches){
 
   return "Your shoe size is " + (inches) * 2.54 + "cm.";
 }
@@ -363,7 +486,7 @@ function otherSize (inches){
   return "Your new shoe size is " + (inches) * 0.0254 + " meters.";
 }
 var otherShoe = otherSize (9.5);
-console.log("otherShoe:", otherShoe);
+console.log("otherShoe:", otherShoe);*/
 
 /*
  * #15
@@ -377,6 +500,14 @@ console.log("otherShoe:", otherShoe);
  
 function allCaps(str){
 
+return str.toUpperCase();
+}
+
+var capsNow = allCaps("believe you can and you're halfway there.");
+console.log("capsNow:", capsNow);
+
+/*function allCaps(str){
+
   return str.toUpperCase();
 }
 var upLetters = allCaps("believe you can and you're halfway there.");
@@ -388,7 +519,7 @@ function tallCaps(xyz){
   return xyz.toUpperCase();
 }
 var bigLetters = tallCaps("enjoy your vacation in singapore and thailand because you'll need it for august!");
-console.log("bigLetters:", bigLetters);
+console.log("bigLetters:", bigLetters);*/
 
 /*
  * #16
@@ -398,7 +529,14 @@ console.log("bigLetters:", bigLetters);
  * Console.log your result.
 */
 
-function oneCap(abc){
+function oneCap(str){
+
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+var oneLetter = oneCap("believe you can and you're halfway there.");
+console.log("oneLetter:", oneLetter);
+
+/*function oneCap(abc){
 
   return abc.charAt(0).toUpperCase() + abc.slice(1);
 }
@@ -411,7 +549,7 @@ function soloCap(zyx){
   return zyx.charAt(0, 23, 37).toUpperCase() + zyx.slice(1);
 }
 var soloLetter = soloCap("enjoy your vacation because you'll need it!");
-console.log("soloLetter:", soloLetter);
+console.log("soloLetter:", soloLetter);*/
 
 /*
  * #17
@@ -424,7 +562,17 @@ console.log("soloLetter:", soloLetter);
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
-function verifyDrinkingAge (age){
+function verifyDrinkingAge(age){
+
+  if (age >= 21) {return true;
+}else{
+  return false;
+}
+}
+var canDrink = verifyDrinkingAge(28);
+console.log("canDrink:", canDrink);
+
+/*function verifyDrinkingAge (age){
 
   if (age >= 21) {return true;
   } else {
@@ -441,7 +589,7 @@ function verifySpeed (speed){
     return false;}
 }
 var freewaySpeed = verifySpeed (65);
-console.log("freewaySpeed:", freewaySpeed);
+console.log("freewaySpeed:", freewaySpeed);*/
 
 /**
  * #18
@@ -450,6 +598,16 @@ console.log("freewaySpeed:", freewaySpeed);
  */
 
 function throwParty(yourAge){
+
+if (yourAge === true) {return "Cheee Hoo! We going to da party!";
+}else{
+  return "Meh, see you at Starbucks.";
+}
+}
+var canParty = throwParty(canDrink);
+console.log("canParty:", canParty);
+
+/*function throwParty(yourAge){
 
   if (yourAge === true) {return "Cheee Hoo! We going to da party!";
 } else {
@@ -466,4 +624,4 @@ function speedingTicket(yourSpeed){
   return "Thank you for obeying the freeway speed limit.";}
 }
 var canFly = speedingTicket(freewaySpeed);
-console.log("canFly:", canFly);
+console.log("canFly:", canFly);*/
